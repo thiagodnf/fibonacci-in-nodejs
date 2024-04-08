@@ -4,12 +4,14 @@
   "description": "An API in Node.js to return the fibonacci numbers",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thiago Ferreira",
   "license": "MIT",
   "dependencies": {
     "express": "^4.19.2",
-    "express-validator": "^7.0.1"
+    "express-validator": "^7.0.1",
+    "minimist": "^1.2.8"
   }
 }

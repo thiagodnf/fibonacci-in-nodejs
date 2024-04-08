@@ -1,9 +1,10 @@
 const express = require("express");
 const { performance } = require('perf_hooks');
+const argv = require('minimist')(process.argv.slice(2));
 
 const { query, matchedData, validationResult } = require('express-validator');
 
-const PORT = 3000;
+const PORT = argv.port || 3000;
 const MIN_INDEX = 0;
 const MAX_INDEX = 50;
 
@@ -51,5 +52,5 @@ app.get("/api/fibonacci", API_VALIDATOR, function (req, res) {
 });
 
 app.listen(PORT, function () {
-    console.log(`Listening on port ${PORT}!`);
+    console.log(`Listening on port ${PORT}`);
 });
