@@ -1,0 +1,15 @@
+{
+  "name": "fibonacci-in-nodejs",
+  "version": "0.0.1",
+  "description": "An API in Node.js to return the fibonacci numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiago Ferreira",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1"
+  }
+}
