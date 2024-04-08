@@ -11,7 +11,7 @@ const MAX_INDEX = 50;
 
 const app = express();
 
-app.use('/', express.static('public'))
+app.use('/', express.static(path.join(__dirname, 'public')))
 
 const API_VALIDATOR = [
     query('index').trim().notEmpty().withMessage("should not be empty"),
@@ -40,7 +40,7 @@ function calculate(index) {
 
 app.get("/api/fibonacci", API_VALIDATOR, function (req, res) {
 
-    console.log(`Request received on port ${PORT}`)
+    console.log(`Request received on port ${PORT} for index ${req.query.index}`)
 
     const errors = validationResult(req)
 
