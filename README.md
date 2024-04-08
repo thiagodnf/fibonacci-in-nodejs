@@ -44,7 +44,7 @@ If you would like to use the built-in REST API, you send send a request to the f
 ##### Example cURL
 
 > ```javascript
->  curl -X GET -H "Content-Type: application/json" -d "index=20" http://localhost:3000/api/fibonacci
+>  curl -X GET -H "Content-Type: application/json" -G -d "index=20" http://localhost:3000/api/fibonacci
 > ```
 
 </details>
