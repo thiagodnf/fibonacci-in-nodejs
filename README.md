@@ -7,13 +7,13 @@ An API in Node.js to return the fibonacci numbers
 First off, install all dependencies:
 
 ```shell
-$ npm install
+npm install
 ```
 
 Then, type the following command to run the app:
 
 ```shell
-$ npm start
+npm start
 ```
 
 Done. Open your browser and access `http://localhost:3000`.
@@ -23,5 +23,5 @@ Done. Open your browser and access `http://localhost:3000`.
 As default, this app runs on port 3000. If you would like to run it in a different port, type the following
 
 ```shell
-$ node server.js --port 3000
+node server.js --port 3000
 ```
