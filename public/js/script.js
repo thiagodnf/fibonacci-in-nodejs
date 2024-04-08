@@ -20,11 +20,11 @@ function sendRequest(index) {
 $(function () {
 
     $("#btn-next").click(function () {
-        sendRequest(index++);
+        sendRequest(++index);
     });
 
     $("#btn-previous").click(function () {
-        sendRequest(index--);
+        sendRequest(--index);
     });
 
     sendRequest(index);
