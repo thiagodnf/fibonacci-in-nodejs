@@ -1,6 +1,7 @@
 const express = require("express");
 const { performance } = require('perf_hooks');
 const argv = require('minimist')(process.argv.slice(2));
+const path = require('path');
 
 const { query, matchedData, validationResult } = require('express-validator');
 
@@ -38,6 +39,8 @@ function calculate(index) {
 }
 
 app.get("/api/fibonacci", API_VALIDATOR, function (req, res) {
+
+    console.log(`Request received on port ${PORT}`)
 
     const errors = validationResult(req)
 
