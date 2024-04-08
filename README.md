@@ -20,7 +20,7 @@ Done. Open your browser and access `http://localhost:3000`.
 
 ## Changing Port
 
-As default, this app runs on port 3000. If you would like to run it in a different port, type the following
+By default, this app runs on port 3000. If you would like to run it in a different port, type the following
 
 ```shell
 node server.js --port 3000
@@ -28,7 +28,7 @@ node server.js --port 3000
 
 ## Using REST API
 
-If you would like to use the built-in REST API, you send send a request to the following endpoint:
+If you would like to use the built-in REST API, you send a request to the following endpoint:
 
 ##### Example cURL
 
